@@ -1,0 +1,41 @@
+.jumbotron {
+   background: url(https://i.imgur.com/dgA7BeD.jpg);
+   background-size: cover;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   z-index: 1;
+}
+
+.jumbotron p {
+   font-weight: 420;
+   z-index: 1;
+}
+
+.imgsIndex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.thumbnail {
+   padding: 0; 
+}
+
+.thumbnail img {
+   width: 100%;
+   /* max-height: 280px; */
+   background-size: cover; 
+}
+
+.deleteForm {
+   display: inline;
+}
+
+#campgroundImage {
+   margin: 30px auto;
+}
+
+/* Google Maps */
+#map {
+   height: 400px;
+   width: 100%;
+}
