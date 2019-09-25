@@ -13,13 +13,11 @@ const express = require('express');
       User       = require('./models/user')
       seedDB     = require('./seeds'),
       app.locals.moment = require('moment'),
-      uri = "mongodb+srv://davidvemtz:davidson!008@cluster0-7lloa.mongodb.net/camp_app?retryWrites=true&w=majority" //"mongodb://localhost:27017/yelp_camp_v9",
       PORT       = process.env.PORT || 8080;
 
 const campgroundRoutes  = require('./routes/campgrounds'),
       commentRoutes     = require('./routes/comments'),
       indexRoutes       = require('./routes/index');
-
 
 mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useCreateIndex: true}, (error) => 
         error ? console.log(error) : console.log("Conectado a MongoDB"));
